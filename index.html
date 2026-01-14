@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mohamed Khalil Nafati</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- CUSTOM STYLES (Overrides Bootstrap for a "Hacker/Tech" look) --- */
+        :root {
+            --primary-color: #00ff41; /* Matrix Green */
+            --bg-dark: #0d1117;       /* GitHub Dark Background */
+            --card-bg: #161b22;       /* Slightly lighter dark for cards */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: #c9d1d9;
+        }
+
+        /* Green Accents */
+        .text-accent { color: var(--primary-color); }
+        .border-accent { border-color: var(--primary-color) !important; }
+
+        /* Custom Button Style */
+        .btn-custom {
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: var(--primary-color);
+            color: #000;
+            box-shadow: 0 0 10px var(--primary-color);
+        }
+
+        /* Card Customization */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #30363d;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+        
+        /* Navbar */
+        .navbar { background-color: rgba(13, 17, 23, 0.95); border-bottom: 1px solid #30363d; }
+        
+        /* Section Spacing */
+        section { padding: 60px 0; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-accent" href="#">&lt;MK_Nafati /&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container text-center py-5 mt-4">
+            
+            <div class="mb-4">
+                <img src="assets/images/profile.jpg" 
+                    alt="Mohamed Khalil Nafati" 
+                    class="rounded-circle border border-4 border-accent shadow-lg"
+                    style="width: 180px; height: 180px; object-fit: cover;">
+            </div>
+            <h1 class="display-3 fw-bold text-white">Hi, I'm <span class="text-accent">Mohamed Khalil</span></h1>
+            <p class="lead text-secondary mb-4">
+                Business Information Systems Student @ ISG Tunis <br>
+                Cybersecurity Enthusiast | Full Stack Developer
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="assets/documents/Mohamed_Khalil_NAFATI_CV.pdf" class="btn btn-custom btn-lg" target="_blank"><i class="fas fa-file-download me-2"></i>Download CV</a>
+                <a href="https://github.com/MoKhalilNafati" class="btn btn-outline-light btn-lg" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-khalil-nafati-64156b355" class="btn btn-outline-light btn-lg" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:Khalilnaffati2004@gmail.com" class="btn btn-outline-light btn-lg"><i class="fas fa-envelope"></i></a>
+            </div>
+        </header>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="mb-4 border-start border-4 border-accent ps-3 text-white">Featured Projects</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Aircraft Management System</h5>
+                            <p class="card-text text-secondary">
+                                A complete REST API for managing aircraft, flights, crew, and sensors. Includes CRUD operations and database management.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary">Python</span>
+                                <span class="badge bg-secondary">Django REST</span>
+                                <span class="badge bg-secondary">SQLite</span>
+                            </div>
+                            <a href="https://github.com/MoKhalilNafati/Aircraft-Management-System" class="btn btn-sm btn-custom">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">HelpHub Platform</h5>
+                            <p class="card-text text-secondary">
+                                A donation management platform connecting donors and associations. Features secure double-role authentication and dashboards.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary">PHP</span>
+                                <span class="badge bg-secondary">MySQL</span>
+                                <span class="badge bg-secondary">Bootstrap</span>
+                            </div>
+                            <a href="https://github.com/MoKhalilNafati/HelpHub-Donation-Management-Website" class="btn btn-sm btn-custom">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">AI-Enhanced Crop Monitoring System</h5>
+                            <p class="card-text text-secondary">
+                                Agricultural monitoring platform designed to ingest simulated IoT sensor data, detect environmental anomalies using Machine Learning (Isolation Forest), and provide actionable recommendations via an AI Agent.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary">Django</span>
+                                <span class="badge bg-secondary">REST API</span>
+                                <span class="badge bg-secondary">PostgreSQL</span>
+                                <span class="badge bg-secondary">Docker</span>
+                            </div>
+                            <a href="https://github.com/MoKhalilNafati/crop-monitoring-system" class="btn btn-sm btn-custom">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Security Operations & Risk Analysis</h5>
+                            <p class="card-text text-secondary">
+                                Implementation of risk assessments using NIST and PASTA frameworks. Experience with SIEM tools, IDS/IPS (Suricata), and incident response lifecycles.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary">NIST/PASTA</span>
+                                <span class="badge bg-secondary">Suricata</span>
+                                <span class="badge bg-secondary">Splunk</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="bg-dark-subtle">
+        <div class="container">
+            <h2 class="mb-4 border-start border-4 border-accent ps-3 text-white">Certifications</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-accent"><i class="fas fa-shield-alt fa-2x"></i></div>
+                            <h5 class="card-title text-white">Google Cybersecurity Professional</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Issued by Coursera / Google</h6>
+                            <p class="card-text small text-secondary">
+                                Comprehensive training in Linux, SQL, Python, SIEM tools, packet analysis, and defensive security strategies.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="https://www.credly.com/badges/2044c625-0a7a-4638-8782-b2b89b8defe9/public_url" class="btn btn-outline-light btn-sm w-100">View Credential</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-accent"><i class="fas fa-brain fa-2x"></i></div>
+                            <h5 class="card-title text-white">OCI 2025 AI Foundations Associate</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Issued by Oracle</h6>
+                            <p class="card-text small text-secondary">
+                                Mastery of fundamental AI concepts, Machine Learning, Deep Learning, and Oracle Cloud AI workloads.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=9A95C7A63410DF7C257D1CB1AA835ECFF1DD681B9E701C70FFA5AE4EDFFCBC87" class="btn btn-outline-light btn-sm w-100">View Credential</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="mb-4 border-start border-4 border-accent ps-3 text-white">Technical Skills</h2>
+            <div class="card p-4">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <h5 class="text-accent">Development</h5>
+                        <ul class="list-unstyled text-secondary">
+                            <li><i class="fab fa-python me-2"></i>Python & Django</li>
+                            <li><i class="fab fa-php me-2"></i>PHP & Laravel</li>
+                            <li><i class="fab fa-js me-2"></i>JavaScript / jQuery</li>                            
+                            <li><i class="fab fa-java me-2"></i>Java / C#</li>
+                            <li><i class="fas fa-database me-2"></i>SQL (Oracle, MySQL, PostgreSQL)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5 class="text-accent">Tools & DevOps</h5>
+                        <ul class="list-unstyled text-secondary">
+                            <li><i class="fab fa-docker me-2"></i>Docker</li>
+                            <li><i class="fab fa-git-alt me-2"></i>Git & GitHub</li>
+                            <li><i class="fas fa-terminal me-2"></i>Linux / Bash</li>
+                            <li><i class="fas fa-chart-bar me-2"></i>Power BI</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-accent">Cybersecurity</h5>
+                        <ul class="list-unstyled text-secondary">
+                            <li><i class="fas fa-bug me-2"></i>Burp Suite & Nmap</li>
+                            <li><i class="fas fa-shield me-2"></i>Web Security</li>
+                            <li><i class="fas fa-network-wired me-2"></i>Wireshark & Tcpdump</li>
+                            <li><i class="fas fa-search me-2"></i>Splunk & Google SecOps</li>
+                            <li><i class="fas fa-shield-virus me-2"></i>NIST & PASTA Frameworks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 border-top border-secondary mt-5">
+        <div class="container">
+            <p class="text-secondary mb-0">&copy; 2026 Mohamed Khalil Nafati. Hosted on GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
